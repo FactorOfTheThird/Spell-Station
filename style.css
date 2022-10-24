@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(35,0,80,1) 54%, rgba(77,0,177,1) 100%); 
+}
+
+.flex-center-v {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center-h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper {
+    width: min(1000px, 100%);
+    height: 100%;
+
+    margin: 0 auto;
+}
+
+#statsHolder {
+    padding: 4px 1rem;
+    background: white;
+
+    font-weight: 500;
+    color: #230050;
+
+    border-radius: 5px 5px 0 0;
+
+    gap: 1rem;
+}
+
+#wordContainer {
+    width: 100%;
+    padding: 1rem;
+
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 3rem;
+
+    margin: 0 0 2rem 0;
+}
+
+#wordInput {
+    padding: 1rem 2rem;
+    width: 100%;
+
+    /* Resets */
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+}
+
+#wordInput:focus {
+    outline: none;
+}
+
+#startGame {
+    padding: 1rem;
+    width: 100%;
+
+    background: none;
+    border: none;
+
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+
+    background: #ffffff0c;
+    border-radius: 0 0 5px 5px;
+}
+
+#startGame:hover {
+    background: #ffffff1c;
+}
